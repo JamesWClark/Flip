@@ -1,0 +1,16 @@
+.well .glyphicon {
+  cursor: pointer;
+  position: absolute;
+  top: 7px;
+  right : 7px;
+}
+
+#g-signout {
+  display: none;
+  cursor: pointer;
+}
+
+#app {
+  display: none;
+}
+

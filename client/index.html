@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="google-signin-client_id" content="570807057244-dgdihgn2co89soo39sb6td3o2j0m6f5p.apps.googleusercontent.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="client.css">
+  <title>ToDo List</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav navbar-right">
+        <li id="g-signout"><a onclick="disconnect()">Signout</a></li>
+        <li>
+          <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="app">
+    <div class="container">
+      <div class="row">
+        <div id="new-task" contenteditable="true" class="well well-lg col-md-12"></div>    
+        <hr>
+      </div>
+    </div>
+
+    <div id="todo-list" class="container"></div>  
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.4/socket.io.min.js"></script>
+  <script src="client.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+</body>
+
+</html>

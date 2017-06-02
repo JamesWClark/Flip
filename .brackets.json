@@ -1,0 +1,15 @@
+{
+    "closeBrackets" : true,
+    "staticserver.port" : 1898,
+    "language" : {
+        "css" : {
+            "spaceUnits" : 2
+        },
+        "html" : {
+            "spaceUnits" : 2
+        },
+        "javascript" : {
+            "spaceUnits" : 4
+        }
+    }
+}
